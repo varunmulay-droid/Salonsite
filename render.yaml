@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: lumiere-beauty-studio
+    runtime: node
+    plan: free
+    buildCommand: npm install --include=dev && npm run build
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_VERSION
+        value: 20.17.0
+      - key: NEXT_PUBLIC_SITE_URL
+        value: https://lumiere-beauty-studio.onrender.com
