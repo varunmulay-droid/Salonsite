@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Aurélia — Beauty, composed.",
+      "hasCanvas": false,
+      "bodyTextLen": 4861,
+      "bodyTextHash": "0bb9c10372702db143370c1ee67ef045695b2dc18d8dd3f7acb5dca3819e3623",
+      "bodyTextPrefix": "AURÉLIA ATELIER LOOKBOOK ARTISANS HOUSES BOOK Reserve FIVE HOUSE",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Aurélia — Beauty, composed.",
+      "hasCanvas": false,
+      "bodyTextLen": 4808,
+      "bodyTextHash": "0c58b6cc58f31618cda8281751f6a8dc8e87afacf329273b8da0c15bfb8a01c6",
+      "bodyTextPrefix": "AURÉLIA FIVE HOUSES A quiet floor, everywhere. Mayfair, Saint-Ge",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

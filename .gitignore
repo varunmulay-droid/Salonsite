@@ -1,2 +1,8 @@
 node_modules
-.next
+.vercel
+.tanstack
+dist
+.env
+.env.*
+!.env.example
+*.log

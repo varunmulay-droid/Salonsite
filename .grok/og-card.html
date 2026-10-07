@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      @font-face {
+        font-family: "MaisonSerif";
+        src: url("file:///usr/share/fonts/truetype/liberation/LiberationSerif-Regular.ttf")
+          format("truetype");
+        font-weight: 400;
+        font-style: normal;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body {
+        width: 1200px;
+        height: 630px;
+        overflow: hidden;
+        background: #f4efe8;
+      }
+      .card {
+        position: relative;
+        width: 1200px;
+        height: 630px;
+        background-color: #f4efe8;
+        background-image: repeating-linear-gradient(
+          0deg,
+          transparent,
+          transparent 4px,
+          rgba(26, 22, 18, 0.018) 4px,
+          rgba(26, 22, 18, 0.018) 5px
+        );
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .vignette {
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(
+          ellipse at center,
+          rgba(244, 239, 232, 0) 42%,
+          rgba(26, 22, 18, 0.055) 100%
+        );
+        pointer-events: none;
+      }
+      .frame {
+        position: absolute;
+        inset: 42px;
+        border: 1px solid #b8a08a;
+        pointer-events: none;
+      }
+      .frame-inner {
+        position: absolute;
+        inset: 50px;
+        border: 1px solid rgba(184, 160, 138, 0.42);
+        pointer-events: none;
+      }
+      .lockup {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .hairpin {
+        width: 42px;
+        height: 30px;
+        margin-bottom: 26px;
+      }
+      .rule {
+        width: 168px;
+        height: 1px;
+        background: #b8a08a;
+      }
+      .wordmark {
+        font-family: "MaisonSerif", "Liberation Serif", "Times New Roman", serif;
+        font-weight: 400;
+        font-size: 108px;
+        line-height: 1;
+        letter-spacing: 0.3em;
+        color: #1a1612;
+        padding-left: 0.3em;
+        margin: 22px 0;
+        font-kerning: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="vignette"></div>
+      <div class="frame"></div>
+      <div class="frame-inner"></div>
+      <div class="lockup">
+        <svg class="hairpin" viewBox="0 0 42 30" aria-hidden="true">
+          <path
+            d="M7 26 C7 9 35 9 35 26"
+            fill="none"
+            stroke="#1A1612"
+            stroke-width="1.7"
+            stroke-linecap="round"
+          />
+        </svg>
+        <div class="rule"></div>
+        <h1 class="wordmark">AURÉLIA</h1>
+        <div class="rule"></div>
+      </div>
+    </div>
+  </body>
+</html>
