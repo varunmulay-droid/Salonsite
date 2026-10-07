@@ -1,0 +1,17 @@
+# Render Blueprint – one-click deploy: New + > Blueprint > pick this repo.
+services:
+  - type: web
+    name: aurelia-salon
+    runtime: node
+    plan: free
+    region: singapore
+    branch: main
+    buildCommand: npm ci && npm run build
+    startCommand: node .output/server/index.mjs
+    healthCheckPath: /
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: NITRO_PRESET # builds a standalone Node server instead of the Vercel bundle
+        value: node-server
